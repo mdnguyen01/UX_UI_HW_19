@@ -1,0 +1,227 @@
+/* GENERAL */
+body {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-li:hover {
+    color: #fd6327;
+}
+
+.skills-li:hover {
+    color: #fec2ca;
+}
+
+.work-li:hover {
+    color: #fdc300;
+}
+
+.studies-li:hover {
+    color: #C2CCD5;
+}
+
+.resume-li:hover {
+    color: #DFC800;
+}
+
+.contact-li:hover {
+    color: #FD9407;
+}
+
+/* HEADER */
+header {
+    background-color: #fdc300;
+}
+
+header img {
+    padding: 10px 5px;
+}
+
+#socials {
+    padding-right: 10px;
+}
+
+/* NAVIGATION */
+nav {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-items: space-around;
+}
+
+nav ul {
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+nav li {
+    padding: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heroImg {
+    padding: 25px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+button {
+    background-color: white;
+    border: black solid 3px;
+    border-radius: 20px;
+    padding: 10px 0;
+    width: 150px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* SKILLS */
+.mySkills {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 5px;
+    margin-top: 0;
+}
+
+.mySkills p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexContainer {
+    display: flex;
+    margin: 10px;
+    margin-top: 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexContainer div {
+    width: 33%;
+    padding: 0 10px;
+    margin: 20px;
+    margin-top: 0;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom: solid 10px #fec2ca;
+    border-right: solid 10px #fec2ca;
+}
+
+.flexContainer img {
+    padding-top: 20px;
+}
+
+/* CASE STUDIES */
+.workGrid {
+    display: grid;
+    grid-template-areas: "cs-image cs-content" "image2 content2" "image3 content3";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.myWork h1 {
+    text-align: center;
+}
+
+.myWork {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cs-content {
+    height: 300px;
+}
+
+.content2 {
+    height: 300px;
+}
+
+.content3 {
+    height: 300px;
+}
+
+.myWork img {
+    height: 300px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark button {
+    background-color: black;
+    border: white solid 3px;
+    color: white;
+}
+
+.dark button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+footer li {
+    padding: 0 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#socials-footer {
+    padding-top: 10px;
+}
+
+footer img {
+    padding-right: 30px;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .workGrid {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "cs-image" "cs-content" "image2" "content2" "image3" "content3";
+    }
+}
